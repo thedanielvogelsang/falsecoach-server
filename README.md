@@ -1,24 +1,19 @@
-# README
+# FalseCoach
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dev Env
 
-Things you may want to cover:
+**With Docker-Compose**
 
-* Ruby version
+Use docker-compose for easy dev env setup.  This will run the DB and server
+in separate containers with appropriate versions of everything.
 
-* System dependencies
+0. `alias dc=docker-compose`
+0. `dc build server`
+0. `dc run server db:setup`
+0. `dc up`
 
-* Configuration
+**Directly**
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a pretty standard rails app so if you've got Postgres going locally already it
+sould be pretty easy to get this going.  Use `DB_URL` environment var to specify
+connection params to your Postgres DB.
