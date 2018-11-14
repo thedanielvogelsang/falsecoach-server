@@ -1,5 +1,15 @@
 # FalseCoach
 
+False Coach is a fictional tool that provides client workout management to a
+single gym/trainer and their clients.
+
+The UI (nonexistent in reality) UI provides Trainers the ability to add clients
+and create workouts for those clients.  Clients can then update the results
+of the workouts they've been assigned via their own application for the
+trainer's review.
+
+This repo provides the API layer which powers the application.
+
 ## Dev Env
 
 **With Docker-Compose**
